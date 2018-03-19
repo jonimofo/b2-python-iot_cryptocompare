@@ -29,6 +29,7 @@ def clear_screen() -> None:
 def get_list_crypto(list_crypto):
     
     for key, value in list_crypto.items():
+
         return (value.get('FullName'))
 
 
@@ -37,9 +38,9 @@ def process_user_choice(user_choice):
 
     if user_choice == 1:
 
-        get_list_crypto()
+        get_list_crypto(list_crypto)
 
-    if user_choice == 0:
+    elif user_choice == 0:
 
         # TODO print(successfully exited with code 0)
         exit
@@ -54,9 +55,9 @@ def main():
     
     clear_screen()
 
-    print('Number of cryptocurrencies available : {}'.format(len(list_crypto)))
+    print('{}Number of cryptocurrencies available : {}{}\n'.format(colors.YELLOW, len(list_crypto), colors.ESCAPE))
     print('{}Enter 1 to get a list of all available cryptocurrencies{}\n'.format(colors.CYAN, colors.ESCAPE))
-    print('{}Enter exit to quit the program{}'.format(colors.CYAN, colors.ESCAPE))
+    print('{}Enter 0 to quit the program{}'.format(colors.CYAN, colors.ESCAPE))
 
     # TODO : verifier valeurs / unwanted values pour ne pas quitter si mauvais choix
     try:
@@ -73,5 +74,4 @@ def main():
 
 
 main()
-
 

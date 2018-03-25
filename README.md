@@ -1,8 +1,8 @@
 ## GIRALT BENJAMIN B2A - TD iot-cryptocompare
 
 #### TODO :		
-  * display more nicely the list of cryptocurrencies
-  * manage input errors when user is asked to enter cryptocurrency 
+  * display more nicely the list of cryptocurrencies (fuzzy list or so)
+  * propose functions to get stats of cryptocurrencies (inflation, price at a given time, ...)
 
 ##
 	

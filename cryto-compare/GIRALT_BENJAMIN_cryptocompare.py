@@ -34,8 +34,8 @@ def clear_screen() -> None:
 
 
 def get_list_cryptocurrencies(list):
+
     l = ''
-    
     for key, value in list.items():
         print(value.get('CoinName') ,'- (',value.get('Name'),')')
     

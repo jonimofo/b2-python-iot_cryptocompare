@@ -13,11 +13,15 @@ It allows the user to :
   * **get a list** of all cryptocurrencies available 
   * **get the price in euros** of a given cryptocurrency	
 
+##
+
 #### Installation
 If you don'have it already installed, install the module **cryptocompy**
 ```
 pip3 install cryptocompy
 ```
+
+##
 
 #### Usage
 ```

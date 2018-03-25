@@ -76,7 +76,7 @@ def main():
     clear_screen() 
     possible_inputs = ['list', 'price', 'quit']
 
-    # print('{}Number of cryptocurrencies available : {}{}\n'.format(colors.YELLOW, len(list_cryptocurrencies), colors.ESCAPE))
+    print('{}CRYPTOCURRENCY TOOL {}\n'.format(colors.BLUE, colors.ESCAPE))
     print('{}\nlist -> {}Get the list of all available cryptocurrencies\n'.format(colors.YELLOW, colors.ESCAPE))
     print('{}price -> {}Get the price in EUROS of a given cryptocurrency\n'.format(colors.YELLOW, colors.ESCAPE))
     print('{}\nquit -> {}Exit the program\n'.format(colors.YELLOW, colors.ESCAPE))
@@ -94,4 +94,15 @@ def main():
             break
 
 
-main()
+try:
+    main()
+
+except KeyboardInterrupt:
+
+    print('{}\n\nProcess Interrupted{}\n'.format(colors.RED, colors.ESCAPE))
+    try:
+        sys.exit(0)
+
+    except SystemExit:
+        sys.exit(0)
+

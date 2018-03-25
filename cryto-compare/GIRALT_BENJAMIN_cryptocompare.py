@@ -9,15 +9,6 @@
 # 	version		| 01.0
 # --------------------------------------------------------------------------------------------------------- 
 
-# 1. Demande à l'utilisateur la crypto dont il veut le prix 
-    #  ou s'il veut la liste des cryptos disponibles.
-
-# 2. Cherche la liste des cryptos et les affiches. 
-    # Ou cherche le prix via l'API de cryptocompare.com et l'affiche
-
-# 3. Retour au n°1
-
-
 from cryptocompy import coin, price 
 import os
 import sys
